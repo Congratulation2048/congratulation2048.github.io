@@ -14,22 +14,25 @@
 
 
 <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.json"};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.json"};
   </script>
 
-  <meta name="description" content="Hello Hexo!!hexo new”标题” 创建一篇文章hexo server 本地启动博客（默认端口4000）hexo generate&#x2F;hexo g 生成静态文件hexo clean 清除缓存hexo deploy 部署">
+  <meta name="description" content="Hello Hexo!!Hexo主要的命令hexo new”标题” 创建一篇文章hexo server 本地启动博客（默认端口4000）hexo generate&#x2F;hexo g 生成静态文件hexo clean 清除缓存hexo deploy 部署 下面是个别的使用的小技巧列表">
 <meta property="og:type" content="article">
 <meta property="og:title" content="我的第一篇博客">
 <meta property="og:url" content="http://example.com/2025/10/18/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Hello Hexo!!hexo new”标题” 创建一篇文章hexo server 本地启动博客（默认端口4000）hexo generate&#x2F;hexo g 生成静态文件hexo clean 清除缓存hexo deploy 部署">
+<meta property="og:site_name" content="CRH的博客">
+<meta property="og:description" content="Hello Hexo!!Hexo主要的命令hexo new”标题” 创建一篇文章hexo server 本地启动博客（默认端口4000）hexo generate&#x2F;hexo g 生成静态文件hexo clean 清除缓存hexo deploy 部署 下面是个别的使用的小技巧列表">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-10-18T08:12:04.000Z">
-<meta property="article:modified_time" content="2025-10-18T08:15:25.395Z">
-<meta property="article:author" content="John Doe">
+<meta property="article:modified_time" content="2025-10-20T07:28:57.469Z">
+<meta property="article:author" content="崔若菡">
+<meta property="article:tag" content="-导航 -分享">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="http://example.com/2025/10/18/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">
@@ -45,7 +48,7 @@
   };
 </script>
 
-  <title>我的第一篇博客 | Hexo</title>
+  <title>我的第一篇博客 | CRH的博客</title>
   
 
 
@@ -96,14 +99,13 @@
 
     <a href="/" class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">Hexo</h1>
+      <h1 class="site-title">CRH的博客</h1>
       <span class="logo-line-after"><i></i></span>
     </a>
   </div>
 
   <div class="site-nav-right">
     <div class="toggle popup-trigger">
-        <i class="fa fa-search fa-fw fa-lg"></i>
     </div>
   </div>
 </div>
@@ -133,38 +135,11 @@
     <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
 
   </li>
-      <li class="menu-item menu-item-search">
-        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
-        </a>
-      </li>
   </ul>
 </nav>
 
 
 
-  <div class="search-pop-overlay">
-    <div class="popup search-popup">
-        <div class="search-header">
-  <span class="search-icon">
-    <i class="fa fa-search"></i>
-  </span>
-  <div class="search-input-container">
-    <input autocomplete="off" autocapitalize="off"
-           placeholder="搜索..." spellcheck="false"
-           type="search" class="search-input">
-  </div>
-  <span class="popup-btn-close">
-    <i class="fa fa-times-circle"></i>
-  </span>
-</div>
-<div id="search-result">
-  <div id="no-result">
-    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
-  </div>
-</div>
-
-    </div>
-  </div>
 
 </div>
     </header>
@@ -191,13 +166,13 @@
     <link itemprop="mainEntityOfPage" href="http://example.com/2025/10/18/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/mytouxiang.png">
+      <meta itemprop="name" content="崔若菡">
+      <meta itemprop="description" content="怀民亦未寝，相与步于中庭">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="CRH的博客">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
@@ -210,9 +185,24 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2025-10-18 16:12:04 / 修改时间：16:15:25" itemprop="dateCreated datePublished" datetime="2025-10-18T16:12:04+08:00">2025-10-18</time>
+              <time title="创建时间：2025-10-18 16:12:04" itemprop="dateCreated datePublished" datetime="2025-10-18T16:12:04+08:00">2025-10-18</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2025-10-20 15:28:57" itemprop="dateModified" datetime="2025-10-20T15:28:57+08:00">2025-10-20</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%B7%A5%E4%BD%9C/" itemprop="url" rel="index"><span itemprop="name">工作</span></a>
+                </span>
             </span>
 
           
@@ -226,15 +216,46 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>Hello Hexo!!<br>hexo new”标题” 创建一篇文章<br>hexo server 本地启动博客（默认端口4000）<br>hexo generate&#x2F;hexo g 生成静态文件<br>hexo clean 清除缓存<br>hexo deploy 部署</p>
+        <h1 id="Hello-Hexo"><a href="#Hello-Hexo" class="headerlink" title="Hello Hexo!!"></a>Hello Hexo!!</h1><h2 id="Hexo主要的命令"><a href="#Hexo主要的命令" class="headerlink" title="Hexo主要的命令"></a>Hexo主要的命令</h2><p>hexo new”标题” 创建一篇文章<br>hexo server 本地启动博客（默认端口4000）<br>hexo generate&#x2F;hexo g 生成静态文件<br>hexo clean 清除缓存<br>hexo deploy 部署</p>
+<h2 id="下面是个别的使用的小技巧"><a href="#下面是个别的使用的小技巧" class="headerlink" title="下面是个别的使用的小技巧"></a>下面是个别的使用的小技巧</h2><h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><ul>
+<li>列表1</li>
+<li>列表2<br> a字列表<br> b字列表</li>
+<li>列表3</li>
+</ul>
+<h3 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h3><p><a target="_blank" rel="noopener" href="https://www.baidu.com/">百度的链接</a></p>
+<h3 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h3><p><img src="data:image/webp;base64,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" alt="图片"></p>
+<h3 id="字体变斜"><a href="#字体变斜" class="headerlink" title="字体变斜"></a>字体变斜</h3><p><em>字体变斜</em></p>
+<h3 id="字体加粗"><a href="#字体加粗" class="headerlink" title="字体加粗"></a>字体加粗</h3><p><strong>字体加粗</strong></p>
+<h3 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(&quot;hello world&quot;)</span><br></pre></td></tr></table></figure>
+<h3 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h3><blockquote>
+<p>我的内容是引用的内容</p>
+</blockquote>
 
     </div>
 
     
     
     
+        <div class="reward-container">
+  <div>喜欢请打赏哦！</div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/Wechatpay.jpeg" alt="崔若菡 微信支付">
+        <p>微信支付</p>
+      </div>
+
+  </div>
+</div>
+
 
       <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E5%AF%BC%E8%88%AA-%E5%88%86%E4%BA%AB/" rel="tag"># -导航 -分享</a>
+          </div>
 
         
 
@@ -304,13 +325,16 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Hello-Hexo"><span class="nav-number">1.</span> <span class="nav-text">Hello Hexo!!</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo%E4%B8%BB%E8%A6%81%E7%9A%84%E5%91%BD%E4%BB%A4"><span class="nav-number">1.1.</span> <span class="nav-text">Hexo主要的命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%8B%E9%9D%A2%E6%98%AF%E4%B8%AA%E5%88%AB%E7%9A%84%E4%BD%BF%E7%94%A8%E7%9A%84%E5%B0%8F%E6%8A%80%E5%B7%A7"><span class="nav-number">1.2.</span> <span class="nav-text">下面是个别的使用的小技巧</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%97%E8%A1%A8"><span class="nav-number">1.2.1.</span> <span class="nav-text">列表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%93%BE%E6%8E%A5"><span class="nav-number">1.2.2.</span> <span class="nav-text">链接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9B%BE%E7%89%87"><span class="nav-number">1.2.3.</span> <span class="nav-text">图片</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AD%97%E4%BD%93%E5%8F%98%E6%96%9C"><span class="nav-number">1.2.4.</span> <span class="nav-text">字体变斜</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AD%97%E4%BD%93%E5%8A%A0%E7%B2%97"><span class="nav-number">1.2.5.</span> <span class="nav-text">字体加粗</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81%E5%9D%97"><span class="nav-number">1.2.6.</span> <span class="nav-text">代码块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BC%95%E7%94%A8"><span class="nav-number">1.2.7.</span> <span class="nav-text">引用</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <p class="site-author-name" itemprop="name">John Doe</p>
-  <div class="site-description" itemprop="description"></div>
+    <img class="site-author-image" itemprop="image" alt="崔若菡"
+      src="/images/mytouxiang.png">
+  <p class="site-author-name" itemprop="name">崔若菡</p>
+  <div class="site-description" itemprop="description">怀民亦未寝，相与步于中庭</div>
 </div>
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
@@ -321,8 +345,28 @@
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
   </nav>
 </div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/congratulation2048" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;congratulation2048" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://weibo.com/_Muffliato_" title="Weibo → https:&#x2F;&#x2F;weibo.com&#x2F;_Muffliato_" rel="noopener" target="_blank"><i class="fab fa-weibo fa-fw"></i>Weibo</a>
+      </span>
+  </div>
 
 
 
@@ -349,10 +393,8 @@
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">John Doe</span>
+  <span class="author" itemprop="copyrightHolder">崔若菡</span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> 强力驱动
-  </div>
 
         
 
@@ -368,6 +410,7 @@
   </div>
 
   
+  <script size="300" alpha="0.6" zIndex="-1" src="true"></script>
   <script src="/lib/anime.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
@@ -377,7 +420,7 @@
 <script src="/js/motion.js"></script>
 
 
-<script src="/js/schemes/muse.js"></script>
+<script src="/js/schemes/pisces.js"></script>
 
 
 <script src="/js/next-boot.js"></script>
@@ -390,10 +433,6 @@
 
 
 
-  
-<script src="/js/local-search.js"></script>
-
-
 
 
 
@@ -409,5 +448,5 @@
 
   
 
-</body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/z16.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true}});</script></body>
 </html>
